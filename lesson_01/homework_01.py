@@ -1,32 +1,33 @@
 # task 01 == Виправте синтаксичні помилки
-print("Hello", end = " ")
-    print("world!")
+print("Hello", " ")
+print("world!")
 
 # task 02 == Виправте синтаксичні помилки
 hello = "Hello"
 world = "world"
-if True:
-print(f"{hello} {world}!")
+
+print(hello, world)
 
 # task 03  == Вcтавте пропущену змінну у ф-цію print
 for letter in "Hello world!":
-    print()
+    print(letter[0])
 
 # task 04 == Зробіть так, щоб кількість бананів була
 # завжди в чотири рази більша, ніж яблук
 apples = 2
-banana = x
+banana = apples * 4
+print(banana,"vs",apples)
 
 # task 05 == виправте назви змінних
-1_storona = 1
-?torona_2 = 2
-сторона_3 = 3
-$torona_4 = 4
+side1 = 1
+side2 = 2
+side3 = 3
+side4 = 4
 
 # task 06 == Порахуйте периметр фігури з task 05
 # та виведіть його для користувача
-perimetery = ? + ? + ? + ?
-print()
+perimetery = side1 + side2 + side3 + side4
+print(perimetery)
 
 
 """
@@ -40,6 +41,11 @@ print()
 У саду посадили 4 яблуні. Груш на 5 більше яблунь, а слив - на 2 менше.
 Скільки всього дерев посадили в саду?
 """
+apple_trees = 4
+pear_trees = apple_trees + 5
+plum_trees = apple_trees - 2
+total_trees = apple_trees + pear_trees + plum_trees
+print("Total trees is ",total_trees)
 
 # task 08
 """
@@ -47,6 +53,10 @@ print()
 Після обіду температура опустилася на 10 градусів.
 Надвечір потепліло на 4 градуси. Яка температура надвечір?
 """
+before_noon_temp = 5
+after_noon_temp = before_noon_temp - 10
+evening_temp = after_noon_temp + 4
+print("Evening temperature is ",evening_temp)
 
 # task 09
 """
@@ -54,6 +64,10 @@ print()
 1 хлопчик захворів та 2 дівчинки не прийшли сьогодні.
 Скількі сьогодні дітей у театральному гуртку?
 """
+boys_quantity = 24
+girls_quantity = boys_quantity / 2
+total_children = (boys_quantity-1) + (girls_quantity-2)
+print("Today is ",total_children)
 
 # task 10
 """
@@ -61,3 +75,8 @@ print()
 а третя - як половина вартості першої та другої разом.
 Скільки будуть коштувати усі книги, якщо купити по одному примірнику?
 """
+book_1 = 8
+book_2 = book_1 + 2
+book_3 = (book_1/2) + (book_2/2)
+total_sum_for_3_books = book_1 + book_2 + book_3
+print("Total sum for three books is ",total_sum_for_3_books)

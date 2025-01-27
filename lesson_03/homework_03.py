@@ -128,3 +128,4 @@ distance = 1600
 petrol_quantity = distance//100*9
 stop_quantity = petrol_quantity//48
 print(f"Необхідно бензину для подорожі {petrol_quantity} літра. Кількість заправок становитиме {stop_quantity}")
+
