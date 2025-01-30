@@ -42,6 +42,7 @@ print(adwentures_of_tom_sawer)
 quantity_letter_h = adwentures_of_tom_sawer.count("h")
 print(f"Quantity of letter h is {quantity_letter_h}")
 
+
 # task 05
 """ Виведіть, скільки слів у тексті починається з Великої літери?
 """
