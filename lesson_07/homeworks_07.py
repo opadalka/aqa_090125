@@ -33,7 +33,7 @@ multiplication_table(3)
 # task 2
 """  Написати функцію, яка обчислює суму двох чисел.
 """
-def sumVal(a, b):
+def sum_value(a, b):
     c=a+b
     return c
 
@@ -104,7 +104,7 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print(f"Total sum {is_even(numbers)}")
 
 # task 8
-def findStrElements(list):
+def find_str_elements(list):
     lst2 =[]
     for i in lst1:
         if isinstance(i, str):
@@ -112,10 +112,10 @@ def findStrElements(list):
     return(lst2)
 
 lst1 = ['1', '2', 3, True, 'False', 5, '6', 7, 8, 'Python', 9, 0, 'Lorem Ipsum']
-print(findStrElements(lst1))
+print(find_str_elements(lst1))
 
 # task 9
-def findLetter():
+def find_letter():
     i=1
     while i>0:
         input_word = input("Enter word:")
@@ -125,17 +125,17 @@ def findLetter():
             i=0
         else:
             i+=1
-findLetter()
+find_letter()
 # task 10
 """  Оберіть будь-які 4 таски з попередніх домашніх робіт та
 перетворіть їх у 4 функції, що отримують значення та повертають результат.
 Обоязково документуйте функції та дайте зрозумілі імена змінним.
 """
-def countSum(number):
+def count_sum(number):
     sum = 0
     for i in range(len(number)):
         sum += int(number[i])
     return sum
 
 natural_number = list(input("Enter number:"))
-print(countSum(natural_number))
+print(count_sum(natural_number))
