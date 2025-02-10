@@ -6,11 +6,11 @@
 #Використовуйте блок try\except, щоб уникнути інших символів, окрім чисел у списку.
 #Для цього прикладу правильний вивід буде - 10, 60, “Не можу це зробити”"""
 
-def sum_all_values(data, arg):
+def sum_all_values(data):
     for elem in data:
-        list = elem.split(",")
+        list_numbers = elem.split(",")
         summ = 0
-        for i in list:
+        for i in list_numbers:
             try:
                 digit = int(i)
             except ValueError:
@@ -23,4 +23,4 @@ def sum_all_values(data, arg):
 
 
 data_list = ["1,2,3,4", "1,2,3,4,50", "qwerty1,2,3"]
-sum_all_values(data_list, 0)
+sum_all_values(data_list)
