@@ -25,7 +25,8 @@ class TestFunctions(unittest.TestCase):
         self.assertEqual(average([1, 2, 3, 6]), 3)
     """Negative case for average"""
     def test_negative_test06(self):
-        self.assertEqual(average("list"), "EXCEPTION")
+        with self.assertRaises(TypeError):
+            average("list")
 
     """Positive case for opposite"""
     def test_positive_test07(self):
@@ -42,7 +43,8 @@ class TestFunctions(unittest.TestCase):
         self.assertEqual(longest(["Hello", "Pet", "Darling"]), "Darling")
     """Negative case for longest"""
     def test_negative_test10(self):
-        self.assertEqual(longest([1, 2, 3, 4, 5]), False)
+        with self.assertRaises(TypeError):
+            longest([1, 2, 3, 4, 5])
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)

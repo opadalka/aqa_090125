@@ -42,13 +42,8 @@ def sum_value(a, b):
 """  Написати функцію, яка розрахує середнє арифметичне списку чисел.
 """
 def average(list):
-    try:
-        avr_value = sum(list, 0)/len(list)
-        print("_____")
-        return int(avr_value)
-    except TypeError:
-        return "EXCEPTION"
-
+    avr_value = sum(list, 0)/len(list)
+    return int(avr_value)
 
 
 # task 4
@@ -69,12 +64,10 @@ def opposite(value):
 """  Написати функцію, яка приймає список слів та повертає найдовше слово у списку.
 """
 def longest(list_words):
-    try:
-        max_val_list = [len(elem) for elem in list_words]
-        index1 = max_val_list.index(max(max_val_list))
-        return list_words[index1]
-    except TypeError:
-        return False
+    max_val_list = [len(elem) for elem in list_words]
+    index1 = max_val_list.index(max(max_val_list))
+    return list_words[index1]
+    
 
 
 
