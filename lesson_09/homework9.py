@@ -8,22 +8,21 @@ def multiplication_table(number):
     # Initialize the appropriate variable
     multiplier = 1
     result = 1
-    try:
+    list_result = []
     # Complete the while loop condition.
-        while result <= 25:
-            result = number * multiplier
-            # десь тут помила, а може не одна
-            if  result > 25:
-            # Enter the action to take if the result is greater than 25
-                break
-            else:
-                print(str(number) + "x" + str(multiplier) + "=" + str(result))
+    while result <= 25:
+        result = number * multiplier
+        # десь тут помила, а може не одна
+        if  result > 25:
+        # Enter the action to take if the result is greater than 25
+            break
+        else:
+            #print(str(number) + "x" + str(multiplier) + "=" + str(result))
+            list_result.append(str(number) + "x" + str(multiplier) + "=" + str(result))
         # Increment the appropriate variable
-                multiplier += 1
-        return True
-    except TypeError as e:
-        #print("exception")
-        return False
+            multiplier += 1
+    print(*list_result, sep="\n")
+    
 
 
 
@@ -33,7 +32,7 @@ def multiplication_table(number):
 """
 def sum_value(a, b):
     try:
-        c=a+b
+        c= a + b
         return c
     except TypeError:
         return False
@@ -72,12 +71,12 @@ def longest(list_words):
 
 
 if __name__ == "__main__":
-    list2 = ["Hello", "Pet", "Animal", "Sophisticated", "Umbrella"]
-    longest([1, 2, 3, 4, 5])
-    val = "Hello my dear friend"
-    val1 = ["H", "e", "l", "l", "o"]
-    print(opposite([1, 2, 3, 4]))
-    list1 = [1, 2, 3, 6]
-    print(average("list1"))
-    print(multiplication_table("3"))
-    sum_value("a", 5)
+   # list2 = ["Hello", "Pet", "Animal", "Sophisticated", "Umbrella"]
+    #longest(list2)
+    #val = "Hello my dear friend"
+    #val1 = ["H", "e", "l", "l", "o"]
+    #print(opposite([1, 2, 3, 4]))
+    #list1 = [1, 2, 3, 6]
+    #print(average(list1))
+    print(multiplication_table(3))
+    #sum_value("a", 5)

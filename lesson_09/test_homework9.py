@@ -8,10 +8,11 @@ except ImportError:
 class TestFunctions(unittest.TestCase):
     """Positive case for multiplication_table"""
     def test_positive_test_01(self):
-        self.assertEqual(multiplication_table(5), True)
+        self.assertIsNone(multiplication_table(5))
     """Negative case for multiplication_table"""
     def test_negative_test_02(self):
-        self.assertEqual(multiplication_table("5"), False)
+        with self.assertRaises(TypeError):
+            multiplication_table("5")
     
     """Positive case for sum_value"""
     def test_positive_test03(self):
