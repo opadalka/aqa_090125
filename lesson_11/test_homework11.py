@@ -1,5 +1,5 @@
 import unittest
-from logger import logger
+
 from homework_11 import log_event
 
 
