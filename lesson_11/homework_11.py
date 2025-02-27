@@ -31,11 +31,7 @@ def log_event(username: str, status: str):
     # Логування події
     if status == "success":
         logger.info(log_message)
-        return True
     elif status == "expired":
         logger.warning(log_message)
-        return "Your password is expired"
     else:
         logger.error(log_message)
-        return False
-
