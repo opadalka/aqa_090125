@@ -46,7 +46,10 @@ class SiteUser():
         return self.__email
     @property
     def access(self):
-        return self.__access
+        if isinstance(self, str):
+            return self.__access
+        else:
+            raise TypeError
     @property
     def logcount(self):
         return self.__logcountincrease
@@ -71,7 +74,7 @@ class SiteUser():
         return f"{self.get_class_name}: {self.name}, mailbox: {self.email}, access level: {self.access}"
 
 if __name__ == "__main__":    
-    user1 = SiteUser("John Doe", "john.doe@example.com", "user")
+    user1 = SiteUser("John Doe", "john.doe@example.com", 1)
     user2 = SiteUser("Jane Smith", "jane.smith@example.com", "user")
     print(user1)
     if(user1==user2):
